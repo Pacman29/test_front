@@ -1,0 +1,24 @@
+.my_singin_form {
+    text-align: center;
+    font-family: DigitalStrip;
+    display: block;
+}
+
+.my_singin_form > div > div > input {
+    margin: 2px;
+    min-height: 35px;
+    width: 80%;
+    font-size: medium;
+}
+
+.my_singin_form> .js-controls> .row >.my_button {
+    border-radius: 12px;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    font-size: medium;
+    color: white;
+    background-color: #42A045;
+    margin:  2px;
+    width: 35%;
+}
