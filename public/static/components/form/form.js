@@ -102,5 +102,5 @@
             return fields;
         }
     }
-    windows.Form = Form;
+    window.Form = Form;
 })();

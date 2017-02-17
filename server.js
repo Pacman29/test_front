@@ -11,7 +11,7 @@ app.set('views','/public/static/views');
 
 app.get('/singin',function (req,res) {
     res.sendFile(__dirname+'/'+app.get('views')+'/autorization.html');
-})
+});
 
 app.listen(process.env.PORT || 5000, function () {
   console.log(`App started on port ${process.env.PORT || 5000}`);

@@ -21,12 +21,18 @@
                         class: "my_btn_image img-responsive",
                         onMouseOver: "this.src='../images/We_do_it.png'",
                         onMouseOut: "this.src='../images/About_us.png'"
+                    },
+                    {
+                        href: "#",
+                        src: "../images/About_rules.png",
+                        class: "my_btn_image img-responsive",
+                        onMouseOver: "this.src='../images/About_rules_2.png'",
+                        onMouseOut: "this.src='../images/About_rules.png'"
                     }
 
                 ]
             }
         });
-        alert(menu);
         game_menu.appendChild(menu.el);
     }
 })();

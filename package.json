@@ -1,5 +1,5 @@
 {
-  "name": "test2",
+  "name": "test_front",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,10 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pacman29/test_front.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.16.1",
-    "express": "^4.14.1"
-  }
+  "bugs": {
+    "url": "https://github.com/Pacman29/test_front/issues"
+  },
+  "homepage": "https://github.com/Pacman29/test_front#readme"
 }

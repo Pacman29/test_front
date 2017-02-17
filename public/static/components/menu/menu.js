@@ -19,19 +19,24 @@
            con.setAttribute('class','container');
            let row = document.createElement('div');
            row.setAttribute('class','row');
+           let count = Math.round(12/this.data.iconbuttons.length);
            this.data.iconbuttons.forEach(item => {
                let div = document.createElement('div');
+               div.setAttribute('class','col-lg-'+count.toString());
+               let a = document.createElement('a');
+               a.setAttribute('href',item.href);
                let img = document.createElement('img');
-               img.setAttribute('href',item.href);
-               img.setAttribute('src',item.src);
-               img.setAttribute('class',item.class);
-               img.setAttribute('onMouseOut',item.onMouseOut);
-               img.setAttribute('onMouseOver',item.onMouseOver);
-               div.appendChild(img);
+               for(let i in item){
+                   if(i != 'href') {
+                       img.setAttribute(i,item[i]);
+                   }
+               }
+               a.appendChild(img);
+               div.appendChild(a);
                row.appendChild(div);
            });
-
-           this.el.appendChild();
+           con.appendChild(row);
+           this.el.appendChild(con);
        }
 
    }
