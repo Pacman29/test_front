@@ -3,7 +3,7 @@
  */
 (function() {
     // import
-    window.Form = class Form {
+    class Form {
         /*
          * Конструктор класса Form
          */
@@ -101,7 +101,6 @@
 
             return fields;
         }
-
     }
-
+    windows.Form = Form;
 })();
